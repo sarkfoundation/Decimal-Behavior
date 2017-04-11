@@ -9,7 +9,7 @@ $( document ).ready(function(){
 	//Maximum length of decimal value
 	var fieldLength = 15; 
 	
-	/*
+	/**
 	 * 1. To set field selection
 	 * 2. Decimal replacer integer
 	 * 3. Return selected integer in field
@@ -73,9 +73,9 @@ $( document ).ready(function(){
 				if( fraction[0].length <= strSlct && fraction[1].length < 2 ){
 					curElem.val( fraction[0]+ "."+ fraction[1] + "" + inpVal );
 				}
-				if( fraction[0].length == strSlct && curElem.val().length <= mxLength  ){
+				if( fraction[0].length == strSlct && curElem.val().length < mxLength  ){
 					curElem.val( fraction[0]+ "" +inpVal+ "."+ fraction[1] );
-				} else if( fraction[0].length >= strSlct && curElem.val().length <= mxLength  ){
+				} else if( fraction[0].length >= strSlct && curElem.val().length < mxLength  ){
 					var val = curElem.val();
 					curElem.val( [val.slice(0, strSlct), inpVal, val.slice(strSlct)].join('') );
 				}
