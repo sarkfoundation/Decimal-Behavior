@@ -13,4 +13,4 @@ Include jQuery and the plugin on a page.
  
  ```<input type="text" data-behaviour="decimal" maxlength="15">```
  
- ##### maxlength is optional if you not set maxlength it will take 15 you want to increse change fieldLength variable in plugin file
+ ##### maxlength is optional if you not set maxlength it will take 15. If you want increse to change fieldLength variable in plugin file.
