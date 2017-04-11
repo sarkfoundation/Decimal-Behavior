@@ -91,8 +91,8 @@ $( document ).ready(function(){
 					sark_behav.selectpoint( curElem, fraction[0].length + 1, fraction[0].length + 1 );
 				}
 			}	
-		} else if( strSlct != endSlct && sark_behav.getSelectVal( curElem ).indexOf( "." ) ){			
-			if( keycode == 46 || keycode == 8  || !( ( keycode < 48 || keycode > 57 )  && ( keycode < 96 || keycode > 105 ) )  ){
+		} else if( strSlct != endSlct && sark_behav.getSelectVal( curElem ).indexOf( "." ) != -1 ){			
+			if( keycode == 46 || keycode == 8  || !( ( keycode < 48 || keycode > 57 )  && ( keycode < 96 || keycode > 105 ) )  ){				
 				var keyval = keycode == 46 || keycode == 8 ? "." : inpVal+".";
 				curElem.val( sark_behav.replaceStr( strSlct, endSlct-keyval.length, keyval, curElem.val() ) );
 				var splval = curElem.val().split( "." )[1].length == 0 ? "00" : "0";
