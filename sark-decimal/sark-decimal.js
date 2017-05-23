@@ -40,7 +40,7 @@ $( document ).ready(function(){
 		var curElem = $( this );
 		if( e.type == "focusin" && curElem.val().length == 0 ){
 			curElem.val( "0.00" );
-			sark_behav.selectpoint( curElem, 0 );
+			sark_behav.selectpoint( curElem, 0, curElem.val( "0.00" ).length );
 		} else if( e.type == "focusout" && curElem.val() == "0.00" || curElem.val() == "0.0" ){
 			$( this ).val( "" );
 		}
