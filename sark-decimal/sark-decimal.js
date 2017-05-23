@@ -97,7 +97,7 @@ $( document ).ready(function(){
 				curElem.val( sark_behav.replaceStr( strSlct, endSlct-keyval.length, keyval, curElem.val() ) );
 				var splval = curElem.val().split( "." )[1].length == 0 ? "00" : "0";
 				curElem.val( curElem.val()+splval );
-				sark_behav.selectpoint( curElem, strSlct, strSlct );
+				sark_behav.selectpoint( curElem, strSlct+1, strSlct+1 );
 				e.preventDefault();
 			}
 			
